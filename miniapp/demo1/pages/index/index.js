@@ -20,6 +20,11 @@ Page({
             banner: banner
         });
     },
+
+    adclick(e){
+        let resdata = e.currentTarget.dataset
+        let data = common.clickad(resdata)
+    },
     clickcard(e) {
         let goods = e.currentTarget.dataset.data;
         let rand = Math.floor(Math.random() * (3)) + 1;

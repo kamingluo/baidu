@@ -42,7 +42,7 @@
 		<body>
 			<view class='centered'>
 				<view class="ad">
-					<ad appid="{{appid}}" apid="{{item.apid}}" class="ad" type="feed"></ad>
+					<ad capture-bind:tap="adclick" data-adid="{{item.apid}}" data-adtype="feed" appid="{{appid}}" apid="{{item.apid}}" class="ad" type="feed"></ad>
 				</view>
 			</view>
 		</body>
@@ -52,7 +52,7 @@
 	<view s-else="{{item.type == 3}}">
 		<view class='centered'>
 			<view class="ad">
-				<ad appid="{{appid}}" apid="{{item.apid}}" class="ad" type="banner"></ad>
+				<ad  capture-bind:tap="adclick" data-adid="{{item.apid}}" data-adtype="banner" appid="{{appid}}" apid="{{item.apid}}" class="ad" type="banner"></ad>
 			</view>
 		</view>
 	</view>
@@ -67,7 +67,7 @@
     <view  s-for="item, index in feed" class="shadow shadow-lg">
 	<view class='centered'>
 		<view class="ad">
-			<ad appid="{{appid}}" apid="{{item}}" class="ad" type="feed"></ad>
+			<ad  capture-bind:tap="adclick"  data-adid="{{item}}" data-adtype="feed" appid="{{appid}}" apid="{{item}}" class="ad" type="feed"></ad>
 		</view>
 	</view>
     </view>
@@ -80,7 +80,7 @@
     <view  s-for="item, index in banner" class="shadow shadow-lg">
 	<view class='centered'>
 		<view class="ad">
-			<ad  appid="{{appid}}" apid="{{item}}"  class="ad" type="banner" ></ad>
+			<ad  capture-bind:tap="adclick" data-adid="{{item}}" data-adtype="banner" appid="{{appid}}" apid="{{item}}"  class="ad" type="banner" ></ad>
 		</view>
 	</view>
     </view>

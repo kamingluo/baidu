@@ -109,6 +109,41 @@ function updated() {
 
 
 
+function clickad(e){
+    //console.log("开始统计广告啦")
+    let adid=e.adid
+    let adtype=e.adtype
+    let appname=baseConfig.appname
+    let appid=baseConfig.appid
+    let ascription=baseConfig.ascription
+    let url=baseConfig.requesturl
+    swan.request({
+            url: url,
+            header: {
+                'content-type': 'application/json'
+            },
+            method: 'POST',
+            dataType: 'json',
+            data: {
+                adid: adid,
+                adtype:adtype,
+                appname:appname,
+                appid:appid,
+                ascription:ascription
+            },
+            success: res => {
+                console.log(res.data);
+            },
+            fail: err => {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+
+}
+
+
+
 
 module.exports = {
     randomdata: randomdata,
@@ -116,4 +151,5 @@ module.exports = {
     havefeedsome: havefeedsome,
     havebannersome: havebannersome,
     updated: updated,
+    clickad:clickad,
 }

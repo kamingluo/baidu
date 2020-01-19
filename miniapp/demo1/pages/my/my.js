@@ -19,6 +19,10 @@ Page({
             banner: banner
         });
     },
+     adclick(e){
+        let resdata = e.currentTarget.dataset
+        let data = common.clickad(resdata)
+    },
 
     onShow: function () {
         let score = swan.getStorageSync("score");

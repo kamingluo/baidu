@@ -9,6 +9,10 @@ Page({
         setInter: '',
         time: 0,
     },
+     adclick(e){
+        let resdata = e.currentTarget.dataset
+        let data = common.clickad(resdata)
+    },
     onShow: function (e) {
         this.startSetInter()
         this.setData({
