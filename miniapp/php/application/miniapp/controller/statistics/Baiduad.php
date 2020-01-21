@@ -20,13 +20,14 @@ class Baiduad
 		$password =$request->param("password");
 		$dbnum =db('baidu_accounts')->where('name',$name)->where('password',$password)->find();//查询用户信息
 		if($dbnum==null){
-			$state=['state'   => '200','message'  => "注册成功" ];
-			$resdata=array_merge($state,array('userdata'=>$dbnum));
-			return $resdata;
+			$dbreturn=['state'   => '400','message'  => "登录失败" ];
+		    return $dbreturn;
 		}
 	    else{
-		    $dbreturn=['state'   => '400','message'  => "登录失败" ];
-		    return $dbreturn;
+
+			$state=['state'   => '200','message'  => "登录成功" ];
+			$resdata=array_merge($state,array('userdata'=>$dbnum));
+			return $resdata;
 		}
 	}
 	
