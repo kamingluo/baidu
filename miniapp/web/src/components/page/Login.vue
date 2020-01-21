@@ -1,7 +1,7 @@
 <template>
   <div class="login-wrap">
     <div class="ms-login">
-      <div class="ms-title">测试后台管理系统</div>
+      <div class="ms-title">百度小程序数据查询</div>
       <el-form
         :model="ruleForm"
         :rules="rules"
@@ -53,25 +53,43 @@ export default {
   },
   methods: {
     submitForm(formName) {
-      console.log(this.ruleForm.username);
-
-      if (
-        this.ruleForm.username == "朱金成" &&
-        this.ruleForm.password == "zhujincheng"
-      ) {
-        this.$refs[formName].validate(valid => {
-          if (valid) {
-            localStorage.setItem("ms_username", this.ruleForm.username);
-            this.$router.push("/");
-          } else {
-            console.log("error submit!!");
-            return false;
-          }
-        });
-      } else {
-        console.log("账号或者密码错误");
-        this.$message.error(`账号或者密码错误`);
-      }
+      console.log("111111111",this.ruleForm.username);
+      
+      let data={
+        name:this.ruleForm.username,
+        password:this.ruleForm.password
+      };
+      console.log(data);
+      this.url ="/miniapp.php/statistics/baiduad/login";
+      this.$axios.post(this.url,data).then(res => {
+       console.log(res.data)
+       if(res.data.state != 200){
+         this.$message.error(`账号或者密码错误`);
+       }
+       else{
+          localStorage.setItem("ms_username", this.ruleForm.username);
+          localStorage.setItem("id", res.data.userdata.id);
+          this.$router.push("/");
+       }
+      });
+    
+      // if (
+      //   this.ruleForm.username == "朱金成" &&
+      //   this.ruleForm.password == "zhujincheng"
+      // ) {
+      //   this.$refs[formName].validate(valid => {
+      //     if (valid) {
+      //       localStorage.setItem("ms_username", this.ruleForm.username);
+      //       this.$router.push("/");
+      //     } else {
+      //       console.log("error submit!!");
+      //       return false;
+      //     }
+      //   });
+      // } else {
+      //   console.log("账号或者密码错误");
+      //   this.$message.error(`账号或者密码错误`);
+      // }
     }
   }
 };

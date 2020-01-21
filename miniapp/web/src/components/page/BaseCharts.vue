@@ -74,7 +74,13 @@ export default {
     //获取数据
     getData() {
       console.log("lalalala");
-      let ascription = 6;
+      
+      let ascription =localStorage.getItem('id');
+      if( ascription ==null || ascription ==""){
+         localStorage.removeItem('ms_username')
+         this.$router.push('/login');
+         return;
+      }
       this.url =
         "/miniapp.php/statistics/baiduad/todayclick?ascription=" + ascription;
       this.$axios(this.url).then(res => {
