@@ -76,7 +76,28 @@ export default {
       contentColor: "rgba(46,199,201,0.3)",
       yEqual: 7
     }
-  })
+  }),
+   created() {
+    this.getData();
+  },
+  
+  methods: {
+       //获取数据
+    getData() {
+        console.log("lalalala")
+      let ascription = 6;
+      this.url = "/miniapp.php/statistics/baiduad/todayclick?ascription=" + ascription;
+      this.$axios(this.url).then(res => {
+        console.log(res);
+        // let data = res.data.data;
+        // this.countnumber = res.data.count;
+        // this.tableData = data;
+        // this.operationVisible = false;
+      });
+    },
+
+  }
+
 };
 </script>
 
