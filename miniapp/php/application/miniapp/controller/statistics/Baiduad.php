@@ -51,9 +51,9 @@ class Baiduad
 
 		$banner=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"banner")->whereTime('create_time', $querytime)->count();
 		$feed=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"feed")->whereTime('create_time', $querytime)->count();
-		$bannerdata=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"banner")->whereTime('create_time', $querytime)->field("count(*) as count,appName")->group('appName')->select();
+		$bannerdata=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"banner")->whereTime('create_time', $querytime)->field("count(*) as value,appName as name")->group('appName')->select();
 
-		$feeddata=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"feed")->whereTime('create_time', $querytime)->field("count(*) as count,appName")->group('appName')->select();
+		$feeddata=db('baidu_statistics')->where('ascription',$ascription)->where('adType',"feed")->whereTime('create_time', $querytime)->field("count(*) as value,appName as name")->group('appName')->select();
 
 		$data=['banner' => $banner,'feed'  => $feed,'bannerdata'  => $bannerdata,'feeddata'  => $feeddata];
 

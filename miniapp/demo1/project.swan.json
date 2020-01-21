@@ -1,5 +1,5 @@
 {
-    "appid": "18275847",
+    "appid": "18325924",
     "compilation-args": {
         "common": {
             "enhance": true
@@ -35,15 +35,15 @@
         "packageId": 543338
     },
     "publish": {
-        "version": "1.0.105.0"
+        "version": "1.0.125.0"
     },
     "setting": {
         "urlCheck": false
     },
     "swan": {
         "baiduboxapp": {
-            "swanJsVersion": "3.140.9",
-            "extensionJsVersion": "1.9.2"
+            "extensionJsVersion": "1.9.2",
+            "swanJsVersion": "3.140.9"
         }
     }
 }

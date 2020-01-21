@@ -1,28 +1,22 @@
 {
     "editor": {
-        "curPath": "",
+        "curPath": "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\data.js",
         "expands": [
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join3",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\my"
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils"
         ],
         "markdownUploadTimeMap": {},
-        "paths": [],
-        "recentlyFiles": [
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\common.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join3\\join3.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\config.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join\\join.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\index\\index.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join\\join.swan",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join2\\join2.swan",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join3\\join3.swan",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\my\\my.swan",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\my\\my.json",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\my\\my.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\index\\index.swan",
+        "paths": [
             "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\data.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\join2\\join2.js",
-            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\pages\\index\\index.css"
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\config.js",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\app.json",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\project.swan.json"
+        ],
+        "recentlyFiles": [
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\data.js",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\project.swan.json",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\utils\\config.js",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\app.json",
+            "E:\\install\\phpshudy\\PHPTutorial\\WWW\\baidu\\miniapp\\demo1\\app.js"
         ]
     }
 }
