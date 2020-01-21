@@ -25,6 +25,11 @@ export default new Router({
           path: '/basecharts',
           component: resolve => require(['../components/page/BaseCharts.vue'], resolve),
           meta: { title: '今日数据' }
+        },
+        {
+          path: '/basecharts2',
+          component: resolve => require(['../components/page/BaseCharts2.vue'], resolve),
+          meta: { title: '昨日数据' }
         }
       ]
     },

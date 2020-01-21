@@ -47,6 +47,11 @@
                         icon: 'el-icon-lx-cascades',
                         index: 'basecharts',
                         title: '今日数据'
+                    },
+                    {
+                        icon: 'el-icon-lx-cascades',
+                        index: 'basecharts2',
+                        title: '昨日数据'
                     }
                 ]
             }

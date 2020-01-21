@@ -12,6 +12,23 @@ class Baiduad
 
 		return  "广告统计模块" ;
 	}
+
+	public function login()
+	{
+		// $data = $request->param();//接收所有传过来的post值
+		$name =$request->param("name");
+		$password =$request->param("password");
+		$dbnum =db('user')->where('name',$name)->where('password',$password)->find();//查询用户信息
+		if($dbnum==null){
+			$state=['state'   => '200','message'  => "注册成功" ];
+			$resdata=array_merge($state,array('userdata'=>$dbnum));
+			return $resdata;
+		}
+	    else{
+		    $dbreturn=['state'   => '400','message'  => "登录失败" ];
+		    return $dbreturn;
+		}
+	}
 	
 
 	public function clickad(Request $request)

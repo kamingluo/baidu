@@ -3,13 +3,13 @@
     <div class="crumbs">
       <el-breadcrumb separator="/">
         <el-breadcrumb-item
-          ><i class="el-icon-lx-favor"></i> 今日数据</el-breadcrumb-item
+          ><i class="el-icon-lx-favor"></i> 昨日数据</el-breadcrumb-item
         >
       </el-breadcrumb>
     </div>
     <div class="container">
       <div class="plugins-tips">
-        今日点击广告数据。 banner广告(横幅)：<a
+        昨日点击广告数据。 banner广告(横幅)：<a
           href="https://github.com/lin-xin/vue-schart"
           target="_blank"
           >{{ pagesData.banner }} 次</a
@@ -76,7 +76,7 @@ export default {
       console.log("lalalala");
       let ascription = 6;
       this.url =
-        "/miniapp.php/statistics/baiduad/todayclick?ascription=" + ascription;
+        "/miniapp.php/statistics/baiduad/todayclick?querytime=yesterday&ascription=" + ascription ;
       this.$axios(this.url).then(res => {
         let data = res.data.data;
         for (let i = 0; i < data.bannerdata.length; i++) {

@@ -29,7 +29,7 @@
             >登录</el-button
           >
         </div>
-        <p class="login-tips">Tips : 账号：test，密码：123456</p>
+        <p class="login-tips">Tips : 找管理员拿账号密码</p>
       </el-form>
     </div>
   </div>
@@ -56,8 +56,8 @@ export default {
       console.log(this.ruleForm.username);
 
       if (
-        this.ruleForm.username == "test" &&
-        this.ruleForm.password == "123456"
+        this.ruleForm.username == "朱金成" &&
+        this.ruleForm.password == "zhujincheng"
       ) {
         this.$refs[formName].validate(valid => {
           if (valid) {
