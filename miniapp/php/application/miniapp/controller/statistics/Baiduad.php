@@ -13,7 +13,7 @@ class Baiduad
 		return  "广告统计模块" ;
 	}
 
-	public function login()
+	public function login(Request $request)
 	{
 		// $data = $request->param();//接收所有传过来的post值
 		$name =$request->param("name");
